@@ -1,5 +1,6 @@
 import { Box, Typography, Link } from "@mui/material";
 import samplelogo from "./media/samplelogo.png";
+import { pink } from "@mui/material/colors";
 
 function Navabar() {
   return (
@@ -10,10 +11,12 @@ function Navabar() {
           width: "100%",
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
-          backgroundColor:"#45BA57"
+          fontFamily: 'Comic Sans',
+          backgroundColor:"navy"
        
           
         }}
+        className="head"
       >
         {/* Left container - Logo and Text */}
         <Box
@@ -28,8 +31,8 @@ function Navabar() {
             src={samplelogo}
             alt="samplelogo"
             style={{
-              width: "60px", // Adjust width as needed
-              height: "60px", // Adjust height as needed
+              width: "80px", // Adjust width as needed
+              height: "80px", // Adjust height as needed
               objectFit: "contain",
               marginRight: "10px", // Adds space between logo and text
             }}
@@ -38,7 +41,9 @@ function Navabar() {
             variant="h5"
             sx={{
               fontWeight: "bold",
-              color: "navy",
+             
+              fontFamily: 'Andale Mono',
+              fontStyle:'italic'
             }}
           >
             Earth Rights Institute
@@ -53,8 +58,10 @@ function Navabar() {
             alignItems: "center",
             flex: "3",
             gap: "20px", // Adds space between links
-           color: "navy",
-            fontWeight:"bold"
+            fontFamily: 'Andale Mono',
+              fontStyle:'italic',
+            fontWeight:"bold",
+            fontSize:"large"
           }}
         >
           <Link href="#about" color="inherit" underline="hover">

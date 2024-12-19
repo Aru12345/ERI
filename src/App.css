@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: blue;
 }
 
 .App-logo {
@@ -38,11 +39,11 @@
 }
 
 .home {
-  background-image: url('https://static.vecteezy.com/system/resources/previews/009/398/082/non_2x/tree-growth-on-globe-glass-in-nature-concept-eco-earth-day-free-photo.jpg');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/022/145/526/non_2x/woman-hand-holding-tree-on-blur-green-nature-background-concept-eco-earth-day-free-photo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 60vh;
   width: 97%;
   margin: 0 auto;
   display: flex;
@@ -53,9 +54,19 @@
 
 .text-box {
   max-width: 40%; /* Adjust as needed to fit the text content */
-  backdrop-filter: blur(20px); /* Applies the blur effect */
-  background-color: rgba(255, 255, 255, 0.464); /* Semi-transparent white background */
+background-color: rgb(128, 201, 127);
   padding: 20px; /* Adds padding inside the text box */
   border-radius: 10px; /* Rounds the edges of the box */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for better visibility */
+  border: 0.1px solid yellow;
+  border-radius: 50px;
+}
+
+.head{
+  color: white;
+}
+
+.oh{
+  background-color: "linear-gradient(to right, #add8e6, #90ee90)";
+
+  height: 100vh;
 }
