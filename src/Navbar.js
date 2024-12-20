@@ -12,7 +12,8 @@ function Navabar() {
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
           fontFamily: 'Comic Sans',
-          color:"black"
+          color:"black",
+          
        
           
         }}
@@ -40,9 +41,9 @@ function Navabar() {
           <Typography
             variant="h5"
             sx={{
-              fontWeight: "bold",
-             
-              fontFamily: 'Andale Mono',
+              fontWeight: "bolder",
+             fontSize:"900",
+             fontFamily: 'Courier',
          
             }}
           >
@@ -57,25 +58,25 @@ function Navabar() {
             justifyContent: "space-around", // Distributes links evenly
             alignItems: "center",
             flex: "3",
-            gap: "20px", // Adds space between links
-            fontFamily: 'Andale Mono',
-            fontWeight:"bold",
-            fontSize:"large"
+            gap: "16px", // Adds space between links
+            fontFamily: 'Courier',
+            fontWeight:"bolder",
+            
           }}
         >
-          <Link href="#about" color="inherit" underline="hover">
+          <Link href="#about" color="inherit" underline="hover" sx={{fontSize:"larger"}}>
             About
           </Link>
-          <Link href="#contact" color="inherit" underline="hover">
+          <Link href="#contact" color="inherit" underline="hover" sx={{fontSize:"larger"}}>
             Projects
           </Link>
-          <Link href="#projects" color="inherit" underline="hover">
+          <Link href="#projects" color="inherit" underline="hover" sx={{fontSize:"larger"}}>
             News
           </Link>
-          <Link href="#current-work" color="inherit" underline="hover">
+          <Link href="#current-work" color="inherit" underline="hover" sx={{fontSize:"larger"}}>
            Support Us
           </Link>
-          <Link href="#current-work" color="inherit" underline="hover">
+          <Link href="#current-work" color="inherit" underline="hover" sx={{fontSize:"larger"}}>
            Contact
           </Link>
         </Box>
