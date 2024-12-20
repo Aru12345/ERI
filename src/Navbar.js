@@ -11,8 +11,11 @@ function Navabar() {
           width: "100%",
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
-          fontFamily: 'Comic Sans',
-          color:"black",
+          fontFamily: 'Impact',
+          color:"white",
+        
+      
+
           
        
           
@@ -43,7 +46,7 @@ function Navabar() {
             sx={{
               fontWeight: "bolder",
              fontSize:"900",
-             fontFamily: 'Courier',
+             fontFamily: 'Impact',
          
             }}
           >
@@ -57,9 +60,9 @@ function Navabar() {
             display: "flex",
             justifyContent: "space-around", // Distributes links evenly
             alignItems: "center",
-            flex: "3",
-            gap: "16px", // Adds space between links
-            fontFamily: 'Courier',
+            flex: "2",
+            gap: "5px", // Adds space between links
+            fontFamily: 'Impact',
             fontWeight:"bolder",
             
           }}

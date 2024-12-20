@@ -5,7 +5,7 @@ import { Button } from '@mui/material';
 
 function App() {
   return (
-    <div>
+    <div class="back">
       <Navabar />
       <Home />
     </div>

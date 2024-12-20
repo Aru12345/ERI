@@ -38,6 +38,15 @@
   }
 }
 
+.back{
+  background-image: url("https://media.licdn.com/dms/image/D5612AQGI3GKQK6rydw/article-cover_image-shrink_600_2000/0/1683962093967?e=2147483647&v=beta&t=d8bmQZd-3xcB8Tu5weV98lQnE3gPf6EV88HkQf7kbtc");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+}
+
 .home {
   background-image: url("https://i0.wp.com/wb40.com/wp-content/uploads/2021/04/EarthArticle.png?fit=1922%2C987&ssl=1");
   background-size: cover;
