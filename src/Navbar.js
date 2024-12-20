@@ -11,8 +11,9 @@ function Navabar() {
           width: "100%",
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
-          fontFamily: 'Impact',
-          color:"white",
+          fontFamily: 'sans-serif',
+          color:"grey",
+         
         
       
 
@@ -46,7 +47,7 @@ function Navabar() {
             sx={{
               fontWeight: "bolder",
              fontSize:"900",
-             fontFamily: 'Impact',
+             
          
             }}
           >
@@ -62,7 +63,7 @@ function Navabar() {
             alignItems: "center",
             flex: "2",
             gap: "5px", // Adds space between links
-            fontFamily: 'Impact',
+            
             fontWeight:"bolder",
             
           }}
