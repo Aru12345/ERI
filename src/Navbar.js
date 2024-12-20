@@ -11,8 +11,8 @@ function Navabar() {
           width: "100%",
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
-          fontFamily: 'sans-serif',
-          color:"grey",
+          fontFamily: 'American Typewriter',
+          color:"green",
          
         
       
@@ -47,11 +47,12 @@ function Navabar() {
             sx={{
               fontWeight: "bolder",
              fontSize:"900",
+             fontFamily: 'American Typewriter',
              
          
             }}
           >
-            Earth Rights Institute
+           <span style={{color:"blue"}}>Earth </span>  Rights Institute
           </Typography>
         </Box>
 
