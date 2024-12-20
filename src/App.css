@@ -39,25 +39,26 @@
 }
 
 .home {
-  background-image: url('https://static.vecteezy.com/system/resources/previews/022/145/526/non_2x/woman-hand-holding-tree-on-blur-green-nature-background-concept-eco-earth-day-free-photo.jpg');
+  background: linear-gradient(to right, rgb(26, 145, 171), rgb(80, 202, 77));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 100vh;
   width: 97%;
   margin: 0 auto;
+ 
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: flex-end; /* Positions content towards the right side */
   padding: 20px; /* Adds some spacing around the content */
 }
 
 .text-box {
   max-width: 40%; /* Adjust as needed to fit the text content */
-background-color: rgb(128, 201, 127);
-  padding: 20px; /* Adds padding inside the text box */
+
+  padding: 30px; /* Adds padding inside the text box */
   border-radius: 10px; /* Rounds the edges of the box */
-  border: 0.1px solid yellow;
+  
   border-radius: 50px;
 }
 
@@ -66,7 +67,13 @@ background-color: rgb(128, 201, 127);
 }
 
 .oh{
-  background-color: "linear-gradient(to right, #add8e6, #90ee90)";
+  
 
   height: 100vh;
+}
+.h{
+  background-color: "navy";
+}
+.ok{
+  background-color:"#1b05a6"
 }

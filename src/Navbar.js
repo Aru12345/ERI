@@ -12,7 +12,7 @@ function Navabar() {
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
           fontFamily: 'Comic Sans',
-          backgroundColor:"navy"
+          backgroundColor:"#1b05a6"
        
           
         }}
