@@ -39,11 +39,11 @@
 }
 
 .home {
-  background: linear-gradient(to right, rgb(26, 145, 171), rgb(80, 202, 77));
+  background-image: url("https://i0.wp.com/wb40.com/wp-content/uploads/2021/04/EarthArticle.png?fit=1922%2C987&ssl=1");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
   width: 97%;
   margin: 0 auto;
  
@@ -76,4 +76,10 @@
 }
 .ok{
   background-color:"#1b05a6"
+}
+.blurred{
+  border: 1px solid yellow;
+  background-color: white;
+  opacity: 0.7;
+  font-weight: "bold";
 }

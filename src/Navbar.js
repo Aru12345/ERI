@@ -12,7 +12,7 @@ function Navabar() {
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
           fontFamily: 'Comic Sans',
-          backgroundColor:"#1b05a6"
+          color:"black"
        
           
         }}
@@ -43,7 +43,7 @@ function Navabar() {
               fontWeight: "bold",
              
               fontFamily: 'Andale Mono',
-              fontStyle:'italic'
+         
             }}
           >
             Earth Rights Institute
@@ -59,7 +59,6 @@ function Navabar() {
             flex: "3",
             gap: "20px", // Adds space between links
             fontFamily: 'Andale Mono',
-              fontStyle:'italic',
             fontWeight:"bold",
             fontSize:"large"
           }}
