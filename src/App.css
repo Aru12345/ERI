@@ -38,15 +38,24 @@
   }
 }
 
-
-
-.home {
-  background-image: url("https://imageio.forbes.com/specials-images/imageserve/65b2091ee442f865f2c67c7f/Will-Generative-AI-Help-Us-Solve-The-Climate-Crisis--Or-Will-It-Make-It-Worse--/960x0.jpg?format=jpg&width=960");
+.back{
+  background-image: url("https://www.thinkingstack.ai/web/image/1793-781b1b2c/6840281_3442850.jpg?access_token=72a0ff79-d699-4291-9eaf-c74559784dda");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 55vh;
-  width: 50%;
+  height: 89vh;
+  width: 100%;
+  margin-left: 3%;
+
+}
+
+.home {
+  background-image: url("https://i0.wp.com/wb40.com/wp-content/uploads/2021/04/EarthArticle.png?fit=1922%2C987&ssl=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 98%;
   margin: 0 auto;
  
   display: flex;
