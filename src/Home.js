@@ -1,58 +1,75 @@
 import "./App.css";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 
 function Home() {
   return (
     <>
-      {/* Main Section */}
+      {/* Hero Section */}
       <Box
-        className="home"
         sx={{
           display: "flex",
           flexDirection: "column",
+          justifyContent: "center",
           alignItems: "center",
-          padding: "1rem",
-         
+          height: "50vh",
+          width: "90vh",
+          backgroundImage: 'url("https://fightclimatechange.earth/wp-content/uploads/2022/12/Climate-Tec.jpg")',
+          padding: "2rem",
           color: "white",
+          textAlign: "center",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundrepeat: "no-repeat",
+          marginLeft:40
         }}
       >
         <Typography
           variant="h6"
           sx={{
             fontWeight: "bold",
-            opacity: 0.9,
-            textAlign: "center",
-            fontFamily: "Arial",
-            padding: "1rem",
-            maxWidth: "90%",
-            opacity:0.7,
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-            fontFamily: "Lucida Console",
-            marginTop:5
+            fontFamily: "Georgia, serif",
+            marginBottom: "0.2rem",
+            color:"white",
+            textShadow: "0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 80px #0ff",
+            
           }}
         >
-           🍃 Building Bridges, Creating Solutions for People and Planet 🍃
+          Bridging Grassroots Action and Global Innovation for a Thriving Planet
         </Typography>
+
+        <Button
+          variant="contained"
+          sx={{
+            marginTop: "2rem",
+            backgroundColor: "#0a23f5",
+            fontWeight:"bold",
+            color: "white",
+            padding: "0.5rem 2rem",
+            "&:hover": {
+              backgroundColor: "#0a23f5",
+
+            },
+          }}
+        >
+          Learn More
+        </Button>
       </Box>
 
-      {/* Our Work Section */}
+      {/* Work Section */}
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-          padding: "2rem",
-          backgroundColor: "#f9f9f9",
+          padding: "3rem 2rem",
+          backgroundColor: "#d2f0fe",
         }}
       >
         <Typography
           variant="h4"
           sx={{
+            textAlign: "center",
             fontWeight: "bold",
             marginBottom: "1.5rem",
-            fontFamily: "Lucida Console",
-            color: "#1a1a1a",
+            fontFamily: "Verdana, sans-serif",
+            color: "#0a23f5",
           }}
         >
           Our Work
@@ -60,20 +77,14 @@ function Home() {
         <Typography
           variant="body1"
           sx={{
-            fontSize: "1.1rem",
+            maxWidth: "80%",
+            margin: "0 auto",
+            fontSize: "1rem",
             lineHeight: 1.8,
-            color: "#333",
-            fontFamily: "Lucida Console",
-            maxWidth: "70%",
+            color: "#424242",
           }}
         >
-          Earth Rights Institute (ERI) takes an innovative approach to combine
-          education, advocacy, and research in building ecologically,
-          economically, and culturally sustainable communities in some of the
-          world's poorest regions. ERI advocates for a development model that
-          re-localizes expertise. We believe empowering communities to direct
-          their own development starts with locally conceived strategies and
-          knowledge.
+          ERI takes an innovative approach to join education, advocacy, and research in building ecologically, economically, and culturally sustainable communities in some of the world's poorest communities. ERI advocates a model of development that supports the re-localization of development expertise. We believe that in order to empower communities to manage and direct their own development, strategies and expert knowledge must be conceived locally.
         </Typography>
       </Box>
     </>

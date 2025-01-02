@@ -48,7 +48,8 @@ function Navabar() {
               fontWeight: "bolder",
              fontSize:"900",
              fontFamily: "Lucida Console",
-             color:"#5db04f",
+             color:"#0a23f5",
+             fontFamily: "Verdana, sans-serif",
              textShadow: "2px 2px 4px rgb(175, 225, 175)",
              
          
@@ -67,9 +68,9 @@ function Navabar() {
             alignItems: "center",
             flex: "2",
             gap: "4px", // Adds space between links
-            fontFamily: "Lucida Console",
+            fontFamily: "Verdana, sans-serif",
             fontWeight:"bolder",
-            color:"#5db04f",
+            color:"#0a23f5",
             textShadow: "2px 2px 4px rgb(175, 225, 175)",
             
           }}
