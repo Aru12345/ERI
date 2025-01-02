@@ -11,8 +11,8 @@ function Navabar() {
           width: "100%",
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
-          fontFamily: 'American Typewriter',
-          color:"green",
+          fontFamily: "Arial",
+          color:"#258eda",
          
         
       
@@ -36,10 +36,10 @@ function Navabar() {
             src={samplelogo}
             alt="samplelogo"
             style={{
-              width: "80px", // Adjust width as needed
-              height: "80px", // Adjust height as needed
+              width: "85px", // Adjust width as needed
+              height: "85px", // Adjust height as needed
               objectFit: "contain",
-              marginRight: "10px", // Adds space between logo and text
+              marginRight: "6px", // Adds space between logo and text
             }}
           />
           <Typography
@@ -47,12 +47,13 @@ function Navabar() {
             sx={{
               fontWeight: "bolder",
              fontSize:"900",
-             fontFamily: 'American Typewriter',
+             fontFamily: "Arial",
+             color:"#258eda"
              
          
             }}
           >
-           <span style={{color:"blue"}}>Earth </span>  Rights Institute
+           Earth Rights Institute
           </Typography>
         </Box>
 
@@ -63,9 +64,11 @@ function Navabar() {
             justifyContent: "space-around", // Distributes links evenly
             alignItems: "center",
             flex: "2",
-            gap: "5px", // Adds space between links
+            gap: "4px", // Adds space between links
             
             fontWeight:"bolder",
+            fontFamily: "Arial",
+            color:"#258eda"
             
           }}
         >
