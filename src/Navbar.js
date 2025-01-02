@@ -12,7 +12,7 @@ function Navabar() {
           alignItems: "center", // Aligns items vertically
           padding: "10px 20px", // Adds padding for better spacing
           fontFamily: "Arial",
-          color:"#258eda",
+          color:"#17e889",
          
         
       
@@ -47,13 +47,15 @@ function Navabar() {
             sx={{
               fontWeight: "bolder",
              fontSize:"900",
-             fontFamily: "Arial",
-             color:"#258eda"
+             fontFamily: "Lucida Console",
+             color:"#5db04f",
+             textShadow: "2px 2px 4px rgb(175, 225, 175)",
              
          
             }}
           >
            Earth Rights Institute
+           
           </Typography>
         </Box>
 
@@ -65,10 +67,10 @@ function Navabar() {
             alignItems: "center",
             flex: "2",
             gap: "4px", // Adds space between links
-            
+            fontFamily: "Lucida Console",
             fontWeight:"bolder",
-            fontFamily: "Arial",
-            color:"#258eda"
+            color:"#5db04f",
+            textShadow: "2px 2px 4px rgb(175, 225, 175)",
             
           }}
         >

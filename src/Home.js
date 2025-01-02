@@ -5,39 +5,54 @@ function Home() {
   return (
     <>
       {/* Main Section */}
-      <Box className="home" sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <Box
+        className="home"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          padding: "1rem",
+         
+          color: "white",
+        }}
+      >
         <Typography
           variant="h6"
           sx={{
-            fontWeight:"bold",
-            backgroundColor: "#258eda",
-            opacity:"0.7",
-            color: "white",
-            padding: 0.1,
+            fontWeight: "bold",
+            opacity: 0.9,
             textAlign: "center",
-            width: "95%", // Optional, to take the full width
-            marginBottom: 2, // Space between the boxes
             fontFamily: "Arial",
-            marginLeft:2
+            padding: "1rem",
+            maxWidth: "90%",
+            opacity:0.7,
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+            fontFamily: "Lucida Console",
+            marginTop:5
           }}
         >
-          Bridging Grassroots Action and Global Innovation for a Thriving Planet
+           🍃 Building Bridges, Creating Solutions for People and Planet 🍃
         </Typography>
-
-
       </Box>
-      <Typography
+
+      {/* Our Work Section */}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+          padding: "2rem",
+          backgroundColor: "#f9f9f9",
+        }}
+      >
+        <Typography
           variant="h4"
           sx={{
             fontWeight: "bold",
-            marginBottom: 2,
-            fontFamily: "Arial",
-            color: "#333",
-            margin:3,
-            display:"flex",
-            textAlign:"center",
-            marginLeft:80,
-            marginTop:5
+            marginBottom: "1.5rem",
+            fontFamily: "Lucida Console",
+            color: "#1a1a1a",
           }}
         >
           Our Work
@@ -45,26 +60,22 @@ function Home() {
         <Typography
           variant="body1"
           sx={{
-            fontSize: "1rem",
-            lineHeight: 1.6,
-            color: "#555",
-            fontFamily: "Arial",
-            margin:5
+            fontSize: "1.1rem",
+            lineHeight: 1.8,
+            color: "#333",
+            fontFamily: "Lucida Console",
+            maxWidth: "70%",
           }}
         >
-          Earth Rights Institute (ERI) takes an innovative approach to join
+          Earth Rights Institute (ERI) takes an innovative approach to combine
           education, advocacy, and research in building ecologically,
           economically, and culturally sustainable communities in some of the
-          world's poorest communities. ERI advocates a model of development
-          that supports the re-localization of development expertise. We believe
-          that in order to empower communities to manage and direct their own
-          development, strategies and expert knowledge must be conceived
-          locally.
+          world's poorest regions. ERI advocates for a development model that
+          re-localizes expertise. We believe empowering communities to direct
+          their own development starts with locally conceived strategies and
+          knowledge.
         </Typography>
-
-      {/* Section for "Our Work" and Three Boxes */}
-     
-  
+      </Box>
     </>
   );
 }
