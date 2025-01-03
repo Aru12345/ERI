@@ -1,4 +1,3 @@
-// Navbar.jsx
 import React from "react";
 import { Box, Typography, Link } from "@mui/material";
 import samplelogo from "./media/samplelogo.png";
@@ -8,49 +7,53 @@ function Navbar() {
     <Box
       sx={{
         display: "flex",
-        justifyContent: "space-between",
+        flexDirection: "column",
         alignItems: "center",
-        padding: "10px 20px",
-        backgroundColor: "#100954",
+        justifyContent: "flex-start",
+        width: "250px",
+        height: "100vh",
+        backgroundColor: "#1a237e",
         color: "white",
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+        padding: "20px",
+        boxShadow: "2px 0 10px rgba(0, 0, 0, 0.1)",
+      
       }}
     >
-      {/* Left Section */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: "15px" }}>
-        <img
-          src={samplelogo}
-          alt="Logo"
-          style={{
-            width: "60px",
-            height: "60px",
-            objectFit: "contain",
-          }}
-        />
-        <Typography
-          variant="h5"
-          sx={{
-            fontWeight: "bold",
-            color: "white",
-            textShadow: "1px 1px 3px #40bf69",
-          }}
-        >
-          Earth Rights Institute
-        </Typography>
-      </Box>
+                <img
+            src={samplelogo}
+            alt="samplelogo"
+            style={{
+              width: "80px", // Adjust width as needed
+              height: "80px", // Adjust height as needed
+              objectFit: "contain",
+              marginRight: "10px", // Adds space between logo and text
+            }}
+          />
+      {/* Logo Section */}
+      <Typography
+        variant="h6"
+        sx={{ fontWeight: "bold", marginBottom: "30px", textAlign: "center" }}
+      >
+        ERI
+      </Typography>
 
-      {/* Right Section */}
-      <Box sx={{ display: "flex", gap: "20px" }}>
-        {["About", "Projects", "Support Us", "Contact"].map((text) => (
+      {/* Navigation Links */}
+      <Box sx={{ display: "flex", flexDirection: "column", gap: "35px", width: "100%", fontWeight:"bold" }}>
+        {["Home", "About", "Projects", "Contact"].map((text) => (
           <Link
             key={text}
-            href={`#${text.toLowerCase().replace(" ", "-")}`}
+            href={`#${text.toLowerCase()}`}
             color="inherit"
             underline="hover"
             sx={{
-              fontSize: "1rem",
-              fontWeight: "bold",
-              letterSpacing: "0.5px",
+              padding: "10px",
+              textAlign: "center",
+              fontFamily:"Gill Sans",
+              borderRadius: "5px",
+              transition: "background-color 0.3s ease",
+              "&:hover": {
+                backgroundColor: "#3949ab",
+              },
             }}
           >
             {text}

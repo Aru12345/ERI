@@ -38,15 +38,20 @@
   }
 }
 
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 .back {
-  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*_qcyuXCXUi3ysJhnUIm4Uw.jpeg");
+  background-image: url("https://www.shutterstock.com/image-vector/concept-corporate-social-responsibility-sustainable-260nw-2171213987.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
-  width: 96%;
-  margin-left: 2%;
+  min-height: 100vh;
+  width: 100%;
 }
+
 
 .home {
   background-image: url("https://i0.wp.com/wb40.com/wp-content/uploads/2021/04/EarthArticle.png?fit=1922%2C987&ssl=1");
