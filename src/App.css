@@ -38,15 +38,14 @@
   }
 }
 
-.back{
-  background-image: url("https://www.thinkingstack.ai/web/image/1793-781b1b2c/6840281_3442850.jpg?access_token=72a0ff79-d699-4291-9eaf-c74559784dda");
+.back {
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*_qcyuXCXUi3ysJhnUIm4Uw.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 89vh;
-  width: 100%;
-  margin-left: 3%;
-
+  height: 90vh;
+  width: 96%;
+  margin-left: 2%;
 }
 
 .home {
@@ -54,8 +53,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
-  width: 98%;
+  height: 60vh;
+  width: 101%;
   margin: 0 auto;
  
   display: flex;
