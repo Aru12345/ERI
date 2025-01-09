@@ -112,10 +112,10 @@ function Subhome(){
             }}
           >
             <Typography variant="body1" fontWeight="bold" color="#2d5ad2">
-              Innovations
+              Living Lab
             </Typography>
             <Typography variant="body1" color="#555">
-             Driving forward creative solutions to address climate and community challenges.
+            Develops educational programs that empower local communities to address social, environmental, and economic challenges through sustainable practices.
             </Typography>
           </Box>
 
@@ -130,10 +130,11 @@ function Subhome(){
             }}
           >
             <Typography variant="body1" fontWeight="bold" color="#2d5ad2">
-              Collaborations
+              Consulting
             </Typography>
             <Typography variant="body1" color="#555">
               Building paternships to amplify impact and achieve shared goals.
+              Provides expert advice on integrating sustainable development practices into community and corporate projects.
             </Typography>
           </Box>
 
@@ -148,10 +149,10 @@ function Subhome(){
             }}
           >
             <Typography variant="body1" fontWeight="bold" color="#2d5ad2">
-             Grassroot Solutions
+             Design
             </Typography>
             <Typography variant="body1" color="#555">
-              Empowering local communities to lead sustainable development efforts.
+              XXX
             </Typography>
           </Box>
         </Box>
