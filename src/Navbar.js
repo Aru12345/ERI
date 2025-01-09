@@ -43,7 +43,7 @@ function Navbar() {
 
       {/* Right Section */}
       <Box sx={{ display: "flex", gap: "20px" }}>
-        {["About", "Projects", "Contribute", "Contact"].map((text) => (
+        {["Home", "Projects", "Journey", "Contribute", "Contact"].map((text) => (
           <Link
             key={text}
             href={`#${text.toLowerCase().replace(" ", "-")}`}

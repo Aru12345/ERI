@@ -30,7 +30,7 @@ const images = [
           mt:3,
       
           overflow: "hidden", // Prevent horizontal/vertical overflow
-          borderRadius: "10px", // Optional styling
+          borderRadius: "1px", // Optional styling
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Optional shadow effect
         }}
       >
@@ -44,7 +44,7 @@ const images = [
                   width: "100%",
                   height: "100%",
                   objectFit: "cover", // Maintain aspect ratio and cover the box
-                  borderRadius: "10px",
+                  borderRadius: "2px",
                 }}
               />
             </Box>
