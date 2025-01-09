@@ -38,30 +38,29 @@
   }
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
 .back {
-  background-image: url("https://www.shutterstock.com/image-vector/concept-corporate-social-responsibility-sustainable-260nw-2171213987.jpg");
+  background-image: url("https://vectorglobe.com/wp-content/uploads/2024/03/What-Is-the-Technology-Media-and-Telecom-TMT-Sector-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 79vh;
   width: 100%;
+  margin-left: 2%;
+  background-color: black;
+  background-color: rgb(208, 171, 122);
 }
-
-
+.secondhome{
+  padding:50%;
+}
 .home {
-  background-image: url("https://i0.wp.com/wb40.com/wp-content/uploads/2021/04/EarthArticle.png?fit=1922%2C987&ssl=1");
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 60vh;
   width: 101%;
   margin: 0 auto;
- 
+  background: linear-gradient(to right, rgb(12, 7, 117), green);
   display: flex;
   align-items: start;
   justify-content: flex-end; /* Positions content towards the right side */
@@ -89,12 +88,10 @@ body {
 .h{
   background-color: "navy";
 }
-.ok{
-  background-color:"#1b05a6"
-}
+
 .blurred{
   border: 1px solid yellow;
-  background-color: white;
+  
   opacity: 0.7;
   font-weight: "bold";
 }

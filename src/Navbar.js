@@ -1,3 +1,4 @@
+// Navbar.jsx
 import React from "react";
 import { Box, Typography, Link } from "@mui/material";
 import samplelogo from "./media/samplelogo.png";
@@ -7,53 +8,52 @@ function Navbar() {
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column",
+        justifyContent: "space-between",
         alignItems: "center",
-        justifyContent: "flex-start",
-        width: "250px",
-        height: "100vh",
-        backgroundColor: "#1a237e",
+        padding: "10px 20px",
+        backgroundColor: "#0a0747",
         color: "white",
-        padding: "20px",
-        boxShadow: "2px 0 10px rgba(0, 0, 0, 0.1)",
-      
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
       }}
     >
-                <img
-            src={samplelogo}
-            alt="samplelogo"
-            style={{
-              width: "80px", // Adjust width as needed
-              height: "80px", // Adjust height as needed
-              objectFit: "contain",
-              marginRight: "10px", // Adds space between logo and text
-            }}
-          />
-      {/* Logo Section */}
-      <Typography
-        variant="h6"
-        sx={{ fontWeight: "bold", marginBottom: "30px", textAlign: "center" }}
-      >
-        ERI
-      </Typography>
+      {/* Left Section */}
+      <Box sx={{ display: "flex", alignItems: "center", gap: "15px" }}>
+        <img
+          src={samplelogo}
+          alt="Logo"
+          style={{
+            width: "99px",
+            height: "80px",
+            objectFit: "contain",
+          }}
+        />
+        <Typography
+          variant="h5"
+          sx={{
+            fontWeight: "bold",
+            color: "white",
+            textShadow: "1px 1px 3px #40bf69",
+            letterSpacing: "3px", // Adjust the spacing between letters
+            wordSpacing: "4px",
+          }}
+        >
+          Earth Rights Institute
+        </Typography>
+      </Box>
 
-      {/* Navigation Links */}
-      <Box sx={{ display: "flex", flexDirection: "column", gap: "35px", width: "100%", fontWeight:"bold" }}>
-        {["Home", "About", "Projects", "Contact"].map((text) => (
+      {/* Right Section */}
+      <Box sx={{ display: "flex", gap: "20px" }}>
+        {["About", "Projects", "Contribute", "Contact"].map((text) => (
           <Link
             key={text}
-            href={`#${text.toLowerCase()}`}
+            href={`#${text.toLowerCase().replace(" ", "-")}`}
             color="inherit"
             underline="hover"
             sx={{
-              padding: "10px",
-              textAlign: "center",
-              fontFamily:"Gill Sans",
-              borderRadius: "5px",
-              transition: "background-color 0.3s ease",
-              "&:hover": {
-                backgroundColor: "#3949ab",
-              },
+              fontSize: "1rem",
+              fontWeight: "bold",
+              letterSpacing: "3px", // Adjust the spacing between letters
+              wordSpacing: "6px",
             }}
           >
             {text}
