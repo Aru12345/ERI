@@ -8,12 +8,15 @@ import Subhome from './Subhome';
 function App() {
   return (
     <>
-     <div className="back">
+     <div className="first">
+      <div class="subfirst">
       <Navabar />
+
+      </div>
       <Home />
     </div>
     <div className='second'>
-    <Subhome />
+      <Subhome />
     </div>
    
     </>

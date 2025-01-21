@@ -2,13 +2,29 @@ import { Box,Typography } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardActions from '@mui/material/CardActions';
+
+import graphic from "./media/graphic.png";
+import consulting from "./media/consulting.png"
+import design from "./media/design.png"
+import livinglab from "./media/livinglab.png"
+import m1 from "./media/m1.jpg"
+import ea from "./media/ea.jpg"
+import scifi from "./media/scifi.jpeg"
 const images = [
-    "https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=",
-    "https://static.stacker.com/s3fs-public/styles/sar_screen_maximum_large/s3/2024-02/turtle-diving-ocean_0.jpg",
-    "https://media.springernature.com/lw630/nature-cms/uploads/collections/A74883_NCOM-Earth-COLLECTION-PRVW_Top50-Hero_500045879-da75ffdfaa95b0ade770adca0d57d223-6927919e6797a40655ebcca2c2087a58.jpg",
+    m1,
+   ea,
+   scifi,
   ];
 
-  const MuiCarousel = () => {
+const MuiCarousel = () => {
     const settings = {
       dots: true,
       infinite: true,
@@ -25,7 +41,7 @@ const images = [
         sx={{
           width: "60%", // Adjust the width
           maxWidth: "500px", // Limit the max width
-          height: "300px", // Constrain the height
+          height: "320px", // Constrain the height
           margin: "auto",
           mt:3,
       
@@ -52,110 +68,103 @@ const images = [
         </Slider>
       </Box>
     );
-  };
+};
 
 function Subhome(){
-    const boxesContent = [
-        {
-          title: "Innovations",
-          color: "#4CAF50",
-          description: "Cutting-edge solutions for ecosystem restoration and technological integration.",
-        },
-        {
-          title: "Collaborations",
-          color: "#FF9800",
-          description: "Partnering with communities, organizations, and nature itself for sustainable impact.",
-        },
-        {
-          title: "Grassroots Solutions",
-          color: "#2196F3",
-          description: "Empowering local communities with culturally aligned, scalable approaches.",
-        },
-      ];
-    return(
-        <>
-        <Box
-        sx={{
-          borderRadius: "10px",
-          padding: "20px",
-          maxWidth: "800px",
-          margin: "50px auto",
-          textAlign: "center",
-           marginLeft:"23%"
-       
-  
-        }}
-      >
-        <Typography
-          variant="h5"
-          sx={{ fontWeight: "bold", marginBottom: "20px", color: "#333" }}
-        >
-          Our Work
-        </Typography>
 
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            gap: "30px",
-           
-          }}
-        >
-          <Box
-            sx={{
-              flex: 2,
-              padding: "25px",
-              borderRadius: "4px",
-              backgroundColor: "#ffffff",
-              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-            border:"0.1px solid navy"
-            }}
-          >
-            <Typography variant="body1" fontWeight="bold" color="#2d5ad2">
-              Living Lab
+return(
+    <>
+        <Box sx={{borderRadius: "10px", padding: "20px",  margin: "50px auto", textAlign: "center"}}>
+            <Box sx={{maxWidth: "800px",  padding: "20px",  margin: "50px auto",}}>
+                <Typography   variant="h4" sx={{ fontWeight: "bold", marginBottom: "20px", color: "#0c0b4d" }}>
+                    Who We Serve and Empower
+                </Typography>
+                <Typography   variant="h6" sx={{ fontWeight: "bold", marginBottom: "20px", color: "#576372", }}>
+                    We work with a diverse range of individuals and groups who are key to driving positive change in their communities. From government leaders to children and youth, our programs are tailored to empower these stakeholders in building a sustainable future.
+                </Typography>
+            <Box sx={{ width: '100%', height: '90%', margin: 'auto'}}>
+                <img src={graphic} alt="graphic" style={{ width: '100%', height: '900' }} />
+            </Box>
+            </Box>
+        <Box>
+            <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: "px", color: "#333",margin:"3%", textShadow: "10px 6px 9px white" }}>
+                Our Work
             </Typography>
-            <Typography variant="body1" color="#555">
-            Develops educational programs that empower local communities to address social, environmental, and economic challenges through sustainable practices.
-            </Typography>
-          </Box>
+            <Box   sx={{
+    display: "flex",
 
-          <Box
-            sx={{
-              flex: 2,
-              padding: "20px",
-              borderRadius: "4px",
-              backgroundColor: "#ffffff",
-              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-                border:"0.1px solid navy"
-            }}
-          >
-            <Typography variant="body1" fontWeight="bold" color="#2d5ad2">
-              Consulting
-            </Typography>
-            <Typography variant="body1" color="#555">
-              Building paternships to amplify impact and achieve shared goals.
-              Provides expert advice on integrating sustainable development practices into community and corporate projects.
-            </Typography>
-          </Box>
+    width: "100%", // Ensures it takes the full width of the parent
+    margin: "auto", // Centers the box horizontally
+    padding: "20px", // Optional, adds space inside the box
+    borderRadius: "10px", // Optional styling for rounded corners
+  }}>
+                <Card sx={{ maxWidth: 350 , color:"navy", fontWeight:"bolder", border:"0.1px solid #d3d6e5",   background: 'linear-gradient(135deg, #f28c0d 0%, #e1e272 100%)',marginRight:"5%", marginLeft:"6%"}}>
+                    <CardActionArea>
+                    <CardMedia component="img"   sx={{ width: '100%', height: 'auto', maxHeight: 150, objectFit: 'contain' }} image={consulting} alt="consulting" />
+                    <CardContent  sx={{textAlign:"left"}}>
+                        <Typography gutterBottom variant="h6" component="div"  sx={{ fontWeight: 900 }}> Consulting </Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary',fontWeight:"bold" }}> We specialize in bridging the gap between grassroots movements and institutional stakeholders by offering expert guidance in:
+                        <ul>
+                            <li>Climate action strategies tailored to local contexts.</li>
+                            <li>Policy development that ensures inclusivity and equity.</li>
+                            <li>Building partnerships that foster trust and long-term collaboration.</li>
+                        </ul>
+                        Our consulting services provide the framework for effective implementation, ensuring solutions are not only impactful but also aligned with the needs and aspirations of communities.
+                        </Typography>
+                    </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                    <Button size="small" color="white" sx={{fontWeight:"bold"}}> View </Button>
+                    </CardActions>
+                </Card>
+                <Card sx={{ maxWidth: 355 , color:"navy", fontWeight:"bolder", border:"0.1px solid #d3d6e5", marginRight:"5%",  background: 'linear-gradient(135deg, #edce0b 0%, #fdf5c8 100%)'}}>
+                    <CardActionArea>
+                    <CardMedia component="img"   sx={{ width: '100%', height: 'auto', maxHeight: 150, objectFit: 'contain' }} image={design} alt="consulting" />
+                    <CardContent  sx={{textAlign:"left"}}>
+                        <Typography gutterBottom variant="h6" component="div"  sx={{ fontWeight: 900 }}> Design </Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary',fontWeight:"bold" }}>Our innovative design approach emphasizes the creation of sustainable systems and models that are adaptable and scalable. This includes:
+                        <ul>
+                            <li>Designing infrastructure and programs that promote ecological harmony and social equity.</li>
+                            <li>Developing tools and resources for education, entrepreneurship, and community empowerment.</li>
+                            <li>Crafting solutions that integrate cutting-edge technology with traditional knowledge.</li>
+                        </ul>
+                        </Typography>
+                    </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                    <Button size="small" color="white" sx={{fontWeight:900,marginTop:"5%"}}> View </Button>
+                    </CardActions>
+                </Card>
 
-          <Box
-            sx={{
-              flex: 2,
-              padding: "20px",
-              borderRadius: "4px",
-              backgroundColor: "#ffffff",
-              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-              border:"0.1px solid navy"
-            }}
-          >
-            <Typography variant="body1" fontWeight="bold" color="#2d5ad2">
-             Design
-            </Typography>
-            <Typography variant="body1" color="#555">
-              XXX
-            </Typography>
-          </Box>
+                <Card sx={{ maxWidth: 350 , color:"navy", fontWeight:"bolder", border:"0.1px solid #d3d6e5",   background: 'linear-gradient(135deg, #f7ef7c 0%,#bde01f 100%)'}}>
+                    <CardActionArea>
+                    <CardMedia component="img"   sx={{ width: '100%', height: 'auto', maxHeight: 150, objectFit: 'contain' }} image={livinglab} alt="consulting" />
+                    <CardContent  sx={{textAlign:"left"}}>
+                        <Typography gutterBottom variant="h6" component="div"  sx={{ fontWeight: 900 }}>Living Labs </Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary',fontWeight:"bold" }}>Living Labs are dynamic spaces where ideas come to life, tested and refined in real-world conditions. These labs:
+                        <ul>
+                            <li>Serve as hubs for experimentation and co-creation with local communities.</li>
+                            <li>Pilot new initiatives, gathering data to optimize outcomes.</li>
+                            <li>Act as models for scaling successful projects to neighboring regions.</li>
+                        </ul>
+                        Through our Living Labs, we ensure that innovation is both practical and rooted in the realities of the people it serves.
+                        </Typography>
+                    </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                    <Button size="small" color="white" sx={{fontWeight:900,marginTop:"10%"}}> View </Button>
+                    </CardActions>
+                </Card>
+
+    
+         
+
+         
         </Box>
+      </Box>
+       
+
+      
       </Box>
 
       <Box
@@ -166,6 +175,7 @@ function Subhome(){
           justifyContent: "space-between",
           padding: "20px",
           minHeight: "40vh",
+          background: 'linear-gradient(to left, #3c9519, #0b0c7b)', 
        
          
         }}

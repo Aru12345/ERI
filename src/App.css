@@ -13,85 +13,36 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+background: linear-gradient(to left, #4fd5e6, #b6d7e8)
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.back {
-  background-image: url("https://www.eetasia.com/wp-content/uploads/sites/2/2022/01/shutterstock_723591637-1-1.jpg?w=600&h=400&crop=1");
+.first {
+  padding-top: 80px;
+  background-image: url("./media/backgroundbanner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 79vh;
-  width: 100%;
-  margin-left: 2%;
+  height: 88vh;
+  height: calc(88vh - 80px);
   background-color: black;
   background-color: rgb(208, 171, 122);
 }
-.secondhome{
-  padding:50%;
-}
-.home {
-  
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 60vh;
-  width: 101%;
-  margin: 0 auto;
-  background: linear-gradient(to right, rgb(12, 7, 117), green);
-  display: flex;
-  align-items: start;
-  justify-content: flex-end; /* Positions content towards the right side */
-  padding: 20px; /* Adds some spacing around the content */
+
+.second{
+  width:100% ;
+
 }
 
-.text-box {
-  max-width: 40%; /* Adjust as needed to fit the text content */
-
-  padding: 30px; /* Adds padding inside the text box */
-  border-radius: 10px; /* Rounds the edges of the box */
-  
-  border-radius: 50px;
+.home{
+    background: 'linear-gradient(to left, #20b359, #3dd2e5)'
 }
 
-.head{
-  color: white;
-}
-
-.oh{
-  
-
-  height: 100vh;
-}
-.h{
-  background-color: "navy";
-}
-
-.blurred{
-  border: 1px solid yellow;
-  
-  opacity: 0.7;
-  font-weight: "bold";
+.subfirst{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
 }
