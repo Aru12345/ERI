@@ -16,14 +16,18 @@ function Home() {
           opacity:"0.9",
           boxShadow: "0 8px 15px rgba(2, 2, 8, 0.5)",
           color: "#2d5ad2",
-          zindex:-1
+          zindex:-1,
+        marginTop:{xs:"12%"},
+        width:{xs:"200px", sm:"400px",md:"600px",submd:"700px",lg:"800px"},
+        height:{submd:"200px",lg:"180px"}
+       
        
         }}
       >
         <Typography
-          variant="h4"
+          variant="h1"
           fontWeight={900}
-          sx={{ color: "navy", textShadow: "0 0 5px white, 0 0 10px #0ff" }}
+          sx={{ color: "navy", textShadow: "0 0 5px white, 0 0 10px #0ff",fontSize:{xs:"1.2rem",sm:"1.3rem",md:"1.4rem",submd:"1.6rem"} }}
         >
           Building Bridges – Creating Solutions for People and Planet
         </Typography>
@@ -40,6 +44,7 @@ function Home() {
             borderRadius: "10px",
             border: "0.2px solid black",
             padding: "20px",
+            fontSize:{xs:"small",submd:"medium",lg:"large"}
           }}
         >
          

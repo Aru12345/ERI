@@ -1,25 +1,40 @@
 // Navbar.jsx
-import React from "react";
-import { Box, Typography, Link } from "@mui/material";
+
+import { Box, Typography, Link, Menu ,MenuItem, MenuList,} from "@mui/material";
 import navlogo from "./media/navlogo.png";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useState,MouseEvent } from "react";
+import { Drawer, IconButton, List, ListItem, ListItemText ,useMediaQuery, useTheme } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 function Navbar() {
+  const[openNav,setOpenNav]=useState(null);
+  const openMenu = (event) => {
+    setOpenNav(event.currentTarget);
+  };
+  
+  const closeMenu =()=>{
+    setOpenNav(null);
+  };
+
+  
   const theme = createTheme({
     breakpoints: {
       values: {
         xs: 300,
         sm: 500,
         md: 700,
+        submd:800,
         lg: 900,
         xl: 1100,
       },
     },
   });
-
+  const isXs = useMediaQuery((theme) => theme.breakpoints.down("xs")); // Matches xs screens
 
   return (
+    <ThemeProvider theme={theme}>
     <Box
       sx={{
         display: "flex",
@@ -50,6 +65,7 @@ function Navbar() {
           }}
         />
           </Link>
+        
         <Typography
           variant="h5"
           sx={{
@@ -58,16 +74,18 @@ function Navbar() {
             textShadow: "1px 1px 3px #40bf69",
             letterSpacing: "2px", // Adjust the spacing between letters
             wordSpacing: "1px",
+            marginRight:{xs:"20px"},
+          
         
           }}
         >
-          EARTH RIGHTS INSTITUTE
+          Earth Rights Institute
         </Typography>
       
       </Box>
 
       {/* Right Section */}
-      <Box sx={{ display: "flex", gap: "20px" }}>
+      <Box sx={{  gap: "20px",display:{xs:"none",submd:"flex"} }}>
       <Link
             href="/"
             color="inherit"
@@ -133,15 +151,100 @@ function Navbar() {
               fontWeight: "bold",
               letterSpacing: "1px", // Adjust the spacing between letters
               wordSpacing: "3px",
-              marginRight:"30px"
+              marginRight:"33px"
             }}
           >
             Contact
           </Link>
        
       </Box>
+      
+      <Box sx={{display:{xs:"flex",submd:"none"}}}>
+        <IconButton size="larger" edge="start" color="inherit" aria-label="logo" sx={{marginRight:"31px"}}  onClick={openMenu} >
+          <MenuIcon />
+        </IconButton>
+        <Menu open={Boolean(openNav)} anchorEl={openNav} // Use the state variable here
+    
+    onClose={closeMenu} >
+          <MenuList sx={{backgroundColor:"#0a0747" ,color:"white",fontWeight:"medium"}}>
+            <MenuItem><Link
+            href="/"
+            color="inherit"
+            underline="hover"
+            sx={{
+              fontSize: "1.1rem",
+              fontWeight: "bold",
+              letterSpacing: "1px", // Adjust the spacing between letters
+              wordSpacing: "3px",
+              marginRight:"30px"
+            }}
+          >
+           Home
+          </Link></MenuItem>
+            <MenuItem><Link
+            href="/projects"
+            color="inherit"
+            underline="hover"
+            sx={{
+              fontSize: "1.1rem",
+              fontWeight: "bold",
+              letterSpacing: "1px", // Adjust the spacing between letters
+              wordSpacing: "3px",
+              marginRight:"30px"
+            }}
+          >
+            Projects
+          </Link></MenuItem>
+            <MenuItem>    <Link
+            href="/about"
+            color="inherit"
+            underline="hover"
+            sx={{
+              fontSize: "1.1rem",
+              fontWeight: "bold",
+              letterSpacing: "1px", // Adjust the spacing between letters
+              wordSpacing: "3px",
+              marginRight:"30px"
+            }}
+          >
+            About
+          </Link></MenuItem>
+            <MenuItem> <Link
+            href="/support"
+            color="inherit"
+            underline="hover"
+            sx={{
+              fontSize: "1.1rem",
+              fontWeight: "bold",
+              letterSpacing: "1px", // Adjust the spacing between letters
+              wordSpacing: "3px",
+              marginRight:"30px"
+            }}
+          >
+           Support
+          </Link></MenuItem>
+            <MenuItem><Link
+            href="/contact"
+            color="inherit"
+            underline="hover"
+            sx={{
+              fontSize: "1.1rem",
+              fontWeight: "bold",
+              letterSpacing: "1px", // Adjust the spacing between letters
+              wordSpacing: "3px",
+              marginRight:"33px"
+            }}
+          >
+            Contact
+          </Link></MenuItem>
+
+          </MenuList>
+
+        </Menu>
+      </Box>
 
     </Box>
+    </ThemeProvider>
   );
 }
 
