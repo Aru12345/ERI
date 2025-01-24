@@ -47,7 +47,7 @@ function Navbar() {
         width:"100%",
         position: "fixed",
         top: 0, 
-        zindex:1
+        zIndex: 1000,
         
         
       }}
@@ -182,7 +182,7 @@ function Navbar() {
            Home
           </Link></MenuItem>
             <MenuItem><Link
-            href="/projects"
+            to="/projects"
             color="inherit"
             underline="hover"
             sx={{
